@@ -1,0 +1,123 @@
+#tituloInfo{
+	padding: 0;
+}
+
+.botonesNavegacion , .botonesNavegacion .row {
+	padding: 0;
+	min-height: 20vh;
+}
+
+.row.align-items-center div{
+	/*padding: 30px 0 30px 0;*/
+}
+
+/*Si se quita esta linea la pagina se corre 15 pixeleces hacia los lados en dispositivos moviles.*/
+.row.align-items-center{
+	margin: 0;
+}
+
+#imagen1{
+	background-image: url("../img/download.svg");
+	object-fit: cover;
+	background-size: 100% 100%;
+}
+
+#tituloInfo header{
+	min-height: 90vh;
+}
+
+#masacercade{
+	/*background-color: #BDD8C4;*/
+}
+
+#playas, #parques, #masacercade {
+	padding: 0;
+}
+
+.botonNavegacion {
+	height: 13vh;
+}
+
+/*Tamanos de los carrousel*/
+	/*Playas*/
+#CarouselFotosPlayas, #CarouselFotosPlayas .carousel-item, #CarouselFotosPlayas .carousel-item img{
+    height: 73vh;
+}
+	/*Parques*/
+#CarouselFotosParques, #CarouselFotosParques .carousel-item, #CarouselFotosParques .carousel-item img{
+    height: 73vh;
+}
+	/*AcercaDe*/
+#CarouselFotosMasAcercaDe, #CarouselFotosMasAcercaDe .carousel-item, #CarouselFotosMasAcercaDe .carousel-item img{
+    height: 73vh;
+}
+
+/* .carousel-control-prev-icon,
+.carousel-control-next-icon,
+.carousel-indicators{
+	filter: invert(100%);
+}
+
+.fondo-transparente{
+	background-color: rgba(0, 0, 0, 0.658);
+	border-radius: 20%;
+	padding: 15px;
+} */
+
+.carousel-caption{
+	background-color: rgba(29, 29, 29, 0.534);
+	border-radius: 1%;
+	height: 80vh;
+	width: 100vw;
+	bottom: 0;
+	top: 0;
+	left: 0;
+	right: 0;
+}
+
+.carousel-caption h1 {
+	text-align: center;
+}
+
+.carousel-caption div{
+	padding: 0 2%;
+	max-height: 60vh;
+}
+
+
+/* Source: https://www.quora.com/Can-I-adjust-text-size-with-Bootstrap-in-a-responsive-design */
+/* Small devices (landscape phones, 544px and up) */
+@media (min-width: 244px) {  
+	h1 {font-size:1.5rem;} /*1rem = 16px*/
+	h2 {font-size: 1.2rem;}
+	#Inicio {
+		padding: 0;
+	}
+  }
+
+  /* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+@media (min-width: 768px) {  
+	h1 {font-size:2rem;} /*1rem = 16px*/
+	h2 {font-size: 1.2rem;}
+	nav#mainNav{
+		padding: 0px;
+	}
+  }
+   
+  /* Large devices (desktops, 992px and up) */
+  @media (min-width: 992px) { 
+	h1 {font-size:2.5rem;} /*1rem = 16px*/
+	h2 {font-size: 2.2rem;}
+	nav#mainNav{
+		padding: 5px;
+	}
+  }
+   
+  /* Extra large devices (large desktops, 1200px and up) */
+  @media (min-width: 1200px) {  
+	h1 {font-size:3rem;} /*1rem = 16px*/    
+	h2 {font-size: 2.7rem;}
+	nav#mainNav{
+		padding: 7px;
+	}
+  }

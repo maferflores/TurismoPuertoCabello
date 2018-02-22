@@ -1,0 +1,54 @@
+#CarouselFotos, .carousel-item, .carousel-item img{
+	height: 80vh;
+}
+
+.imagen-portada {
+	/*min-width: 100vw;*/
+	object-fit: cover;
+}
+
+
+
+.btn{
+	margin: 0 10px;
+}
+
+#Inicio {
+	padding: 0;
+}
+
+nav#mainNav{
+	padding: 5px;
+}
+
+/*QUITANDO PADDING DE EL NOMBRE DE LA PAGINA EN LA BARRA DE NAVEGACION*/
+#navbarResponsive a{
+	padding: 0 10px;
+}
+
+#logo{
+	padding: 0;
+}
+
+/*COLORES DE BARRA DE NAVEGACION*/
+.fondo-azul{
+	background-color: #5A8D9A;
+
+}
+
+.fondo-azul-claro{
+	background-color: #16232B;
+}
+
+.fondo-azul-claro, .fondo-azul{
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+}
+
+
+
+@media (min-width: 244px) {  
+	#logo {font-size:1.2rem;} /*1rem = 16px*/
+  }

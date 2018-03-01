@@ -68,6 +68,15 @@ nav#mainNav{
 	 background-size:99%;
 	 background-repeat:no-repeat;
 	 background-position:center center;
+	 
+}
+
+#logoText{
+	font-family: 'Baumans', cursive;
+	font-family: 'Megrim', cursive;
+	color: black;
+	font-weight: bolder;
+	padding-left: 3%;
 }
 
 /* .nav-link{

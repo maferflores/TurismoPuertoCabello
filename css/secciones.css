@@ -4,7 +4,7 @@
 
 .botonesNavegacion , .botonesNavegacion .row {
 	padding: 0;
-	min-height: 20vh;
+	min-height: 15vh;
 }
 
 .row.align-items-center div{
@@ -41,15 +41,26 @@
 /*Tamanos de los carrousel*/
 	/*Playas*/
 #CarouselFotosPlayas, #CarouselFotosPlayas .carousel-item, #CarouselFotosPlayas .carousel-item img{
-    height: 73vh;
+    height: 79vh;
 }
 	/*Parques*/
 #CarouselFotosParques, #CarouselFotosParques .carousel-item, #CarouselFotosParques .carousel-item img{
-    height: 73vh;
+    height: 79vh;
 }
 	/*AcercaDe*/
 #CarouselFotosMasAcercaDe, #CarouselFotosMasAcercaDe .carousel-item, #CarouselFotosMasAcercaDe .carousel-item img{
-    height: 73vh;
+    height: 79vh;
+}
+
+.carousel-caption{
+	background-color: rgba(29, 29, 29, 0.534);
+	border-radius: 1%;
+	height: 79vh;
+	width: 100vw;
+	bottom: 0;
+	top: 0;
+	left: 0;
+	right: 0;
 }
 
 /* .carousel-control-prev-icon,
@@ -64,16 +75,6 @@
 	padding: 15px;
 } */
 
-.carousel-caption{
-	background-color: rgba(29, 29, 29, 0.534);
-	border-radius: 1%;
-	height: 80vh;
-	width: 100vw;
-	bottom: 0;
-	top: 0;
-	left: 0;
-	right: 0;
-}
 
 .carousel-caption h1 {
 	text-align: center;
@@ -93,6 +94,9 @@
 	#Inicio {
 		padding: 0;
 	}
+	/* nav#mainNav{
+		padding: 0px;
+	} */
   }
 
   /* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
@@ -100,7 +104,7 @@
 	h1 {font-size:2rem;} /*1rem = 16px*/
 	h2 {font-size: 1.2rem;}
 	nav#mainNav{
-		padding: 0px;
+		padding: 2px;
 	}
   }
    

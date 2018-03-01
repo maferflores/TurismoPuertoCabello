@@ -1,5 +1,5 @@
 #CarouselFotos, .carousel-item, .carousel-item img{
-	height: 80vh;
+	height: 84vh;
 }
 
 .imagen-portada {
@@ -22,9 +22,10 @@ nav#mainNav{
 }
 
 /*QUITANDO PADDING DE EL NOMBRE DE LA PAGINA EN LA BARRA DE NAVEGACION*/
-#navbarResponsive a{
+/* #navbarResponsive a{
 	padding: 0 10px;
-}
+	color: black;
+} */
 
 #logo{
 	padding: 0;
@@ -32,12 +33,20 @@ nav#mainNav{
 
 /*COLORES DE BARRA DE NAVEGACION*/
 .fondo-azul{
-	background-color: #5A8D9A;
-
+	background-color: rgb(191, 242, 255);
 }
+
+.fondo-azul #navbarResponsive a{
+	color: black;
+}
+
 
 .fondo-azul-claro{
 	background-color: #16232B;
+}
+
+.fondo-azul-claro #navbarResponsive a{
+	color: white;
 }
 
 .fondo-azul-claro, .fondo-azul{
@@ -52,3 +61,15 @@ nav#mainNav{
 @media (min-width: 244px) {  
 	#logo {font-size:1.2rem;} /*1rem = 16px*/
   }
+
+#logoImage{
+	height:45px;
+	 width:45px;
+	 background-size:99%;
+	 background-repeat:no-repeat;
+	 background-position:center center;
+}
+
+/* .nav-link{
+	padding: 2%;
+} */

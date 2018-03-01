@@ -26,22 +26,28 @@
     offset: 54
   });
 
-var navMovilClickeado = 0;
 
-$('#navMovil').click(function(){
-    // alert('hola')
-  $('#mainNav').toggleClass("bg-transparent",false);
-  $('#mainNav').toggleClass("bg-dark",true);
+// CODIGO PARA EDITAR EL NAV EN VERSION MOVIL...
+// var navMovilClickeado = 0;
 
-    //quiero que este codigo se ejecute SOLO UNA VEZ!
-  if (navMovilClickeado == 0) {
-      // Muestra los textos del menu en el movil
-      $('.hiddenText').toggleClass('hiddenText',false);
-      navMovilClickeado += 1;
-      console.log(navMovilClickeado)
-  }
+// $('#navMovil').click(function(){
+//     // alert('hola')
+//   $('#mainNav').toggleClass("bg-transparent",false);
+//   $('#mainNav').toggleClass("bg-dark",true);
 
-});
+//     //quiero que este codigo se ejecute SOLO UNA VEZ!
+//   if (navMovilClickeado == 0) {
+//       // Muestra los textos del menu en el movil
+//       //$('.hiddenText').toggleClass('hiddenText',false);
+//       navMovilClickeado += 1;
+//       console.log(navMovilClickeado)
+//   }
+
+// });
+// /CODIGO PARA EDITAR EL NAV EN VERSION MOVIL...
+
+
+
   // ===================CUANDO SE ENFOQUE EL INICIO, BARRA TRANSPARENTE======================
 $(window).scroll(function(){
   $('#Inicio .imagen-portada').each(function(){
@@ -49,11 +55,13 @@ $(window).scroll(function(){
       // $(this).children('span').text('visible');
     $('#mainNav').toggleClass("fondo-azul",true);
     $('#mainNav').toggleClass("fondo-azul-claro",false);
+    $('#logo').toggleClass("icono-blanco",false);
     }
     else{
       // $(this).children('span').text('invisible');
     $('#mainNav').toggleClass("fondo-azul",false);
     $('#mainNav').toggleClass("fondo-azul-claro",true);
+    $('#logo').toggleClass("icono-blanco",true);
     }
   });
 });

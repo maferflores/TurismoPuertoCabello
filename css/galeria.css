@@ -1,161 +1,161 @@
 .card {
-/*   padding: 10px; */
-  color: black;
-/*   outer margin */
-  margin: 10px 5px;
-/*   card size */
-  width: 300px;
-  height: 400px;
+  /*   padding: 10px; */
+    color: black;
+  /*   outer margin */
+    margin: 10px 5px;
+  /*   card size */
+    width: 300px;
+    height: 400px;
+    
+    text-align: center;
+  /*   background: green; */
+  /*   the container is rounded, to help the image stay inside it, we hide its corners.
+    ALSO! this avoid that when the image is transformed, it doesn't break its container'*/
+    overflow: hidden;
+  }
   
-  text-align: center;
-/*   background: green; */
-/*   the container is rounded, to help the image stay inside it, we hide its corners.
-  ALSO! this avoid that when the image is transformed, it doesn't break its container'*/
-  overflow: hidden;
-}
-
-.cardImage{
-/*   Image size to fit the container */
-  height:355px; 
-  width:300px;
-/*   preserve image ratio is not necessary*/
-/*   object-fit: cover; */
-/*   background-size: 210%; */
+  .cardImage{
+  /*   Image size to fit the container */
+    height:355px; 
+    width:300px;
+  /*   preserve image ratio is not necessary*/
+  /*   object-fit: cover; */
+  /*   background-size: 210%; */
+    
+     background-position: center center;
+    background-size: 233%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    
+    filter: blur(0px);
+    filter: brightness(100%);
+    transition: filter 0.5s, transform 0.5s;
+    
+  }
   
-   backgound-position: center center;
-  background-size: 233%;
-  background-position: center center;
-  background-repeat: no-repeat;
   
-  filter: blur(0px);
-  filter: brightness(100%);
-  transition: filter 0.5s, transform 0.5s;
+  .cardDescription{
+    transition: transform 0.5s;
+    padding: 0 20px;
+  }
   
-}
-
-
-.cardDescription{
-  transition: transform 0.5s;
-  padding: 0 20px;
-}
-
-.cardDescriptionRow{
-  width: 100%;
-}
-
-.card:hover .cardImage{
-  filter: blur(10px);
-  filter: brightness(0%);
-  transform: scale(2.19);
-}
-
-.card:hover .cardDescription {
-  transform: translateY(150px);
-}
-
-/*Clases para abrir y cerrar elemento con un boton*/
-/*.expandCardImage{
-  filter: blur(10px);
-  filter: brightness(0%);
-  transform: scale(2.19);
-}
-
-.expandCardDescription {
-  transform: translateY(150px);
-}
-
-.title{
-  margin: 20px 0;
-}*/
-
-
-.cardImageContent{
-  padding:0;
-  height: 400px;
-    width:100%;
-    color:white;
-/* translate the image to the middle */
-/*   transform: translateY(150px); */
-/*   set the position relative to the parent */
-    position: absolute;
-
-  opacity: 0;
-    transition: opacity 0.5s;
-/*   using the z-index to place the hidden card description on top of the card image */
-    z-index: 3;
-}
-
-.card:hover .cardImageContent{
-  opacity: 1;
-}
-
-.lineaDecoracion{
-  display:inline-block; width:20px;background-color:white;margin:5px 2px
-}
-
-/*Esto evita que el contenido oculto de las tarjetas se desplace y no este centrado*/
-.card .container-fluid{
-  padding: 0;
-}
-
-.tabs-internos{
-  padding-bottom:  10px;
-}
-
-.icono-tabs-internos{
-  height: 45px;
-  width: 40px;
-  background-size: 100%;
-  background-position: center center;
-  background-repeat: no-repeat;
-}
-
-.icono-blanco{
-    filter: brightness(0) invert(1);
-}
-
-.icono-pequeno{
-  height: 35px;
-  width: 30px;
-  background-size: 100%;
-  background-position: center center;
-  background-repeat: no-repeat;
-}
-
-.tab-content, .cardDescription{
-  text-align: justify;
-}
-
-/*aplicar scroll a los elementos que se salgan de la caja*/
-
-.tab-pane{
-    padding: 0px 10px;
-    max-height: 300px;
+  .cardDescriptionRow{
     width: 100%;
+  }
+  
+  .card:hover .cardImage{
+    filter: blur(10px);
+    filter: brightness(0%);
+    transform: scale(2.19);
+  }
+  
+  .card:hover .cardDescription {
+    transform: translateY(150px);
+  }
+  
+  /*Clases para abrir y cerrar elemento con un boton*/
+  /*.expandCardImage{
+    filter: blur(10px);
+    filter: brightness(0%);
+    transform: scale(2.19);
+  }
+  
+  .expandCardDescription {
+    transform: translateY(150px);
+  }
+  
+  .title{
+    margin: 20px 0;
+  }*/
+  
+  
+  .cardImageContent{
+    padding:0;
+    height: 400px;
+      width:100%;
+      color:white;
+  /* translate the image to the middle */
+  /*   transform: translateY(150px); */
+  /*   set the position relative to the parent */
+      position: absolute;
+  
+    opacity: 0;
+      transition: opacity 0.5s;
+  /*   using the z-index to place the hidden card description on top of the card image */
+      z-index: 3;
+  }
+  
+  .card:hover .cardImageContent{
+    opacity: 1;
+  }
+  
+  .lineaDecoracion{
+    display:inline-block; width:20px;background-color:white;margin:5px 2px
+  }
+  
+  /*Esto evita que el contenido oculto de las tarjetas se desplace y no este centrado*/
+  .card .container-fluid{
+    padding: 0;
+  }
+  
+  .tabs-internos{
+    padding-bottom:  10px;
+  }
+  
+  .icono-tabs-internos{
+    height: 45px;
+    width: 40px;
+    background-size: 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+  
+  .icono-blanco{
+      filter: brightness(0) invert(1);
+  }
+  
+  .icono-pequeno{
+    height: 35px;
+    width: 30px;
+    background-size: 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+  
+  .tab-content, .cardDescription{
+    text-align: justify;
+  }
+  
+  /*aplicar scroll a los elementos que se salgan de la caja*/
+  
+  .tab-pane{
+      padding: 0px 10px;
+      max-height: 300px;
+      width: 100%;
+      overflow: auto; 
+  }
+  
+  /*Estilos para la barra de scroll*/
+  
+  ::-webkit-scrollbar {
+      width: 12px;
+  }
+  
+  ::-webkit-scrollbar-track {
+      -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+      border-radius: 10px;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+      border-radius: 5px;
+      -webkit-box-shadow: inset 0 0 6px rgba(255,255,255,1); 
+  }
+  
+  /*Fuente:https://stackoverflow.com/questions/42115110/how-can-i-change-the-scrollbar-style-in-bootstrap*/
+  
+  
+  .textoOculto{
+    max-height: 315px;
     overflow: auto; 
-}
-
-/*Estilos para la barra de scroll*/
-
-::-webkit-scrollbar {
-    width: 12px;
-}
-
-::-webkit-scrollbar-track {
-    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
-    border-radius: 10px;
-}
-
-::-webkit-scrollbar-thumb {
-    border-radius: 5px;
-    -webkit-box-shadow: inset 0 0 6px rgba(255,255,255,1); 
-}
-
-/*Fuente:https://stackoverflow.com/questions/42115110/how-can-i-change-the-scrollbar-style-in-bootstrap*/
-
-
-.textoOculto{
-  max-height: 315px;
-  overflow: auto; 
-  text-align: justify;
-}
+    text-align: justify;
+  }

@@ -86,58 +86,6 @@
 }
 
 
-/* Source: https://www.quora.com/Can-I-adjust-text-size-with-Bootstrap-in-a-responsive-design */
-/* Small devices (landscape phones, 544px and up) */
-@media (min-width: 244px) {  
-	h1 {font-size:1.5rem;} /*1rem = 16px*/
-	h2 {font-size: 1.2rem;}
-	#Inicio {
-		padding: 0;
-	}
-	#logoText{
-		font-size: 80%;
-	}
-	/* nav#mainNav{
-		padding: 0px;
-	} */
-  }
-
-  /* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
-@media (min-width: 768px) {  
-	h1 {font-size:2rem;} /*1rem = 16px*/
-	h2 {font-size: 1.2rem;}
-	nav#mainNav{
-		padding: 2px;
-	}
-	#logoText{
-		font-size: 90%;
-	}
-  }
-   
-  /* Large devices (desktops, 992px and up) */
-  @media (min-width: 992px) { 
-	h1 {font-size:2.5rem;} /*1rem = 16px*/
-	h2 {font-size: 2.2rem;}
-	nav#mainNav{
-		padding: 5px;
-	}
-	#logoText{
-		font-size: 110%;
-	}
-  }
-   
-  /* Extra large devices (large desktops, 1200px and up) */
-  @media (min-width: 1200px) {  
-	h1 {font-size:3rem;} /*1rem = 16px*/    
-	h2 {font-size: 2.7rem;}
-	nav#mainNav{
-		padding: 7px;
-	}
-	#logoText{
-		font-size: 120%;
-	}
-  }
-
 
   /* IMAGENES DE REDES SOCIALES */
 
@@ -198,3 +146,95 @@
 	url(data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTkuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDQ2OC43OTIgNDY4Ljc5MiIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNDY4Ljc5MiA0NjguNzkyOyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIgd2lkdGg9IjY0cHgiIGhlaWdodD0iNjRweCI+CjxnPgoJPGc+CgkJPGc+CgkJCTxwYXRoIGQ9Ik0yMzQuMzk2LDBDMTA0Ljk0NiwwLDAsMTA0Ljk0NiwwLDIzNC4zOTZzMTA0Ljk0NiwyMzQuMzk2LDIzNC4zOTYsMjM0LjM5NiAgICAgczIzNC4zOTYtMTA0Ljk0NiwyMzQuMzk2LTIzNC4zOTZDNDY4Ljc5MiwxMDQuOTE0LDM2My44NDYsMCwyMzQuMzk2LDB6IE0zODAuODgxLDM3MC4zMjljMCw1LjgxNi00LjczNiwxMC41NTItMTAuNjE1LDEwLjU1MiAgICAgSDk4LjQ2MmMtNS44MTYsMC0xMC41ODQtNC43MDQtMTAuNTg0LTEwLjU1MlY5OC40NjJjMC01LjgxNiw0LjczNi0xMC41ODQsMTAuNTg0LTEwLjU4NGgyNzEuODA0ICAgICBjNS44NDgsMCwxMC42MTUsNC43MzYsMTAuNjE1LDEwLjU4NEMzODAuODgxLDk4LjQ2MiwzODAuODgxLDM3MC4zMjksMzgwLjg4MSwzNzAuMzI5eiBNMTc1Ljc4OSwyMzQuMzk2ICAgICBjMC0zMi4zNTUsMjYuMjUyLTU4LjYwNyw1OC42MDctNTguNjA3czU4LjYwNywyNi4yNTIsNTguNjA3LDU4LjYwN3MtMjYuMjUyLDU4LjYwNy01OC42MDcsNTguNjA3ICAgICBTMTc1Ljc4OSwyNjYuNzUsMTc1Ljc4OSwyMzQuMzk2eiBNMjkzLjAwMywxMTcuMTgyaDU4LjYwN3Y1OC42MDdoLTU4LjYwN1YxMTcuMTgyeiBNMzE5LjYzNiwyMTkuNzQ0aDMxLjk3M3YxMzEuODM0SDExNy4yMTQgICAgIFYyMTkuNzQ0aDMyLjAwNWMtMS4yNCw1Ljg4LTEuOTcxLDguNDIyLTEuOTcxLDE0LjY1MmMwLDQ4LjExOSwzOS4xMjQsODcuMTc5LDg3LjE3OSw4Ny4xNzkgICAgIGM0OC4xMTksMCw4Ny4xNzktMzkuMDYxLDg3LjE3OS04Ny4xNzlDMzIxLjU3NSwyMjguMTY2LDMyMC44NzYsMjI1LjYyNCwzMTkuNjM2LDIxOS43NDR6IiBmaWxsPSIjMDAwMDAwIi8+CgkJPC9nPgoJPC9nPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+Cjwvc3ZnPgo=);
 }
 
+/* agranda los botones al hacer hover */
+.img-responsive.botonNavegacion{
+	transition: all 0.5s;
+}
+
+a:hover .img-responsive.botonNavegacion{
+	transform: scale(1.1);
+}
+
+
+
+
+
+
+/* Source: https://www.quora.com/Can-I-adjust-text-size-with-Bootstrap-in-a-responsive-design */
+/* Small devices (landscape phones, 544px and up) */
+@media (min-width: 244px) {  
+	h1 {font-size:1.5rem;} /*1rem = 16px*/
+	h2 {font-size: 1.2rem;}
+	#Inicio {
+		padding: 0;
+	}
+	#logoText{
+		font-size: 80%;
+	}
+	/* contenido se slides arrastralo a la izquierda
+	(elimina esto en el movil) */
+	.tab-pane > p{
+		width: 100%;
+	}
+	
+	.tab-pane > div{
+		width: 100%;
+	}
+  }
+
+  /* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+@media (min-width: 768px) {  
+	h1 {font-size:2rem;} /*1rem = 16px*/
+	h2 {font-size: 1.2rem;}
+	nav#mainNav{
+		padding: 2px;
+	}
+	#logoText{
+		font-size: 90%;
+	}
+	.tab-pane > p{
+		width: 80%;
+	}
+	
+	.tab-pane > div{
+		width: 80%;
+	}
+  }
+   
+  /* Large devices (desktops, 992px and up) */
+  @media (min-width: 992px) { 
+	h1 {font-size:2.5rem;} /*1rem = 16px*/
+	h2 {font-size: 2.2rem;}
+	nav#mainNav{
+		padding: 5px;
+	}
+	#logoText{
+		font-size: 110%;
+	}
+	.tab-pane > p{
+		width: 70%;
+	}
+	
+	.tab-pane > div{
+		width: 70%;
+	}
+  }
+   
+  /* Extra large devices (large desktops, 1200px and up) */
+  @media (min-width: 1200px) {  
+	h1 {font-size:3rem;} /*1rem = 16px*/    
+	h2 {font-size: 2.7rem;}
+	nav#mainNav{
+		padding: 7px;
+	}
+	#logoText{
+		font-size: 120%;
+	}
+	.tab-pane > p{
+		width: 50vw;
+	}
+
+	.tab-pane > div{
+		width: 50vw;
+	}
+  }
